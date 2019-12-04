@@ -198,7 +198,7 @@ describe ApplicationController do
 
       it 'lets user create a tweet if they are logged in' do
         user = User.create(:username => "becky567", :email => "starz@aol.com", :password => "kittens")
-
+      
         visit '/login'
 
         fill_in(:username, :with => "becky567")
